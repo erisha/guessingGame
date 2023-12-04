@@ -34,11 +34,12 @@ function guessingGame() {
       } else if (mysteryNum < userInput) {
         alert('Nope. Guess a lower number....try again');
       }
-    }
+
     // out of guesses/ attempts
-    if (attempts > maxAttemps){
-      alert(`Game Over! You're out of guesses.`)
+    else if (attempts > maxAttemps){
+      alert(`Game Over! You're out of guesses. The correct number is ${mysteryNum}`);
     }
+}
   }
 
   guessingGame();
