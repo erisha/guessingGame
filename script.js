@@ -19,7 +19,7 @@ function guessingGame() {
         // alert(`You guessed ${userInput}`);
 
     // check if userInputinput is a valid number 
-    if (isNan(userInput)){
+    if (isNaN(userInput)){
       alert(`Error: Please enter a valid number`);
       attempts --; //substacts after each incorrect attempt
       continue; 
@@ -32,7 +32,7 @@ function guessingGame() {
       else if (mysteryNum > userInput) {
         alert(`Nope. Guess higher....try again`);
       } else if (mysteryNum < userInput) {
-        alert(`Nope. Guess a lower number....try again`);
+        alert('Nope. Guess a lower number....try again');
       }
     }
     // out of guesses/ attempts
